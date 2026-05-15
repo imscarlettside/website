@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  color: #000;
   font-family: "Inter";
   font-size: 16px;
   font-style: normal;
@@ -32,7 +31,7 @@ h1 {
 }
 
 h2 {
-  color: #000;
+  color: #3d4367;
   font-family: "Brawler";
   font-size: 36px;
   font-style: normal;
@@ -40,7 +39,7 @@ h2 {
   line-height: normal;
 }
 h3 {
-  color: #000;
+  color: #3d4367;
   font-family: "Inter";
   font-size: 16px;
   font-style: normal;
@@ -49,8 +48,29 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  color: white;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: white;
+  font-family: "Inter";
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 a:link {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -76,7 +96,7 @@ a:focus {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  background-image: url(/assets/placeholder-bg.png);
+  background-image: url(/assets/Background-Graphic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
@@ -113,7 +133,7 @@ a:focus {
 }
 
 .section-two-wrapper {
-  min-height: 40vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
 }
@@ -127,14 +147,16 @@ a:focus {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  color: #3d4367;
+  gap: 1rem;
 }
 
 .section-three-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 25vh;
-  background-image: url(/assets/placeholder.png);
+  min-height: 35vh;
+  background-image: url(/assets/Background-Graphic-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -155,8 +177,63 @@ a:focus {
   color: #fff;
 }
 
+.section-four-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  min-height: 50vh;
+}
+
 .section-four {
-  margin: 4rem;
+  gap: 2rem;
+  display: flex;
   max-width: 60%;
+  margin: 4rem;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.button-blue {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #3d4367;
+  flex-grow: 0;
+}
+
+.footer-wrapper {
+  min-height: 40vh;
+  background-color: #3d4367;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  margin: 4rem;
+  padding: 0rem 0rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-grow: 2;
+}
+
+.footer-contact {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  color: #fff;
   gap: 1rem;
+}
+
+.fineprint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
 }
