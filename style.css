@@ -1,3 +1,162 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+@import url("https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: aquamarine;
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h1 {
+  color: #fff;
+
+  font-family: "Brawler";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+h2 {
+  color: #000;
+  font-family: "Brawler";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+h3 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 1px solid var(--accent-color);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  position: sticky;
+  color: #2e2a33;
+  margin: 4rem;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/placeholder-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  width: 3rem;
+}
+
+.button {
+  padding: 1rem 1rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.hero-headline-wrapper {
+  width: 70%;
+  display: flex;
+
+  justify-content: left;
+  text-align: left;
+  margin: 4rem;
+}
+
+.section-two {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 4rem;
+  align-items: start;
+  gap: 4rem;
+}
+
+.section-two-wrapper {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-two-desc {
+  display: flex;
+  flex-grow: 2;
+}
+
+.contact {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.section-three-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 25vh;
+  background-image: url(/assets/placeholder.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-three {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 20rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.section-three-header {
+  color: #fff;
+}
+
+.section-three-description {
+  color: #fff;
+}
+
+.section-four {
+  margin: 4rem;
+  max-width: 60%;
+  gap: 1rem;
 }
